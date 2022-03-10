@@ -1,5 +1,4 @@
 export default function handler(req, res) {
-  console.log("req", req.query);
   var axios = require("axios");
   var config = {
     method: "get",

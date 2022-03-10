@@ -29,6 +29,7 @@ export default function Home() {
         <div
           style={{
             paddingTop: 170,
+            paddingBottom: 60,
           }}
         >
           {data &&

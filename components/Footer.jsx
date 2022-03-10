@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles({
   root: {
@@ -10,11 +10,20 @@ const useStyles = makeStyles({
     bottom: 0,
     width: "100%",
     textAlign: "center",
+    height: 50,
+    borderTop: "#eee 2px solid",
+  },
+  footer: {
+    marginTop: "12px !important",
   },
 });
 
 export default function Footer() {
   const classes = useStyles();
 
-  return <div className={classes.root}>ok</div>;
+  return (
+    <Paper className={classes.root}>
+      <div className={classes.footer}>Footer</div>
+    </Paper>
+  );
 }
